@@ -14,6 +14,6 @@
   $result = $mysqli->query("INSERT INTO ".$db_table." (title, year, format, actors) VALUES ('$title','$year','$format','$stars')");
   mysqli_close($mysqli);
   ?>
-    <script <script type="text/javascript">window.location="$_SERVER['DOCUMENT_ROOT'].'/index.php'"  </script>
+  <script type="text/javascript">window.location = "../index.php" </script>
 </body>
 </html>

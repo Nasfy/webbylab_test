@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="./css/main.css">
-
-<?php require_once './database/db_connect.php'?>
-<?php
+<?php require_once './database/db_connect.php';
 function getTitle($mysqli) {
   $sql = "SELECT * FROM films_info ORDER BY title";
   $result = mysqli_query($mysqli, $sql);
@@ -9,9 +7,7 @@ function getTitle($mysqli) {
   return ($title);
 }
 $title = getTitle($mysqli);
-?>
-
-<?php  if(count($title) === 0):?>
+if(count($title) === 0):?>
   <h1>NO FILMS</h1>
   <p>Tap <span class="bold">"IMPORT file"</span> or <span class="bold">"ADD film"</span> for download  </p>
 <?php else:
@@ -21,7 +17,7 @@ $title = getTitle($mysqli);
       <li><a href="#" class="menu"><?=$title[$i][title]?></a>
         <ul class="sub-menu">
           <div class="sub">
-            <?= $i?>
+          <li>#:<?=$title[$i][id]?></li>
           <li><?=$title[$i][year]?></li>
           <li><?=$title[$i][format]?></li>
           <li><?=$title[$i][actors]?></li>

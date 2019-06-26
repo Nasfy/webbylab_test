@@ -8,9 +8,6 @@
     <li><a href="#win1">IMPORT file</a></li>
   </ul>
 </div>
-
-<!--Button work-->
-
 <a href="#x" class="overlay" id="win1"></a>
    <div class="popup">
      <h2 class="bold">IMPORT FILE</h2>
@@ -27,8 +24,9 @@
    <div class="popup">
      <h2 class="bold">SEARCH FILM</h2>
      <br>
-     <form action="./view/search_view.php" method="post">
+     <form action="./search_view.php" method="post">
        <input class="add" name="title" type="text" placeholder="Title"/>
+       <p class="bold">OR</p>
        <input class="add" name="name" type="text" placeholder="Actors name"/>
        <input type="submit" value="SEARCH"/>
      </form>
