@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/main.css">
-  <script type="text/javascript">
-
-  </script>
   <title>Webbylab</title>
 </head>
 <body>
