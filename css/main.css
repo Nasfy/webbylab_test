@@ -26,6 +26,7 @@
 }
 .bold {
   font-weight: bold;
+  font: sans-serif;
 }
 .overlay {
     top: 0;
@@ -117,13 +118,17 @@
 }
 .popup p {margin: 0; padding: 5px 0}
 .add {
-  display: block;
+  display: inline-block;
+  color: #383838;
   margin: 10px 0px;
   height: 30px;
   width: 400px;
   background-color: #DEF2F1;
   font: 20px sans-serif;
   margin: 20px 100px;
+}
+::placeholder {
+  color: #383838;
 }
 .list li{
   display: block;
@@ -166,3 +171,4 @@
   height: 30px;
   background-color: pink;
 }
+.error {color: #FF0000;}

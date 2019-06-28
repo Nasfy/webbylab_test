@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/main.css">
 <?php require_once './database/db_connect.php';
 function getTitle($mysqli) {
-  $sql = "SELECT * FROM films_info ORDER BY title";
+  $sql = "SELECT * FROM films_info ORDER BY title COLLATE utf8_unicode_ci";
   $result = mysqli_query($mysqli, $sql);
   $title = mysqli_fetch_all($result, MYSQLI_ASSOC);
   return ($title);

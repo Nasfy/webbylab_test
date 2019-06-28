@@ -10,7 +10,7 @@
     <?php require 'menu.php' ?>
   </header>
   <main id="main" class="main">
-    <h1 class="bold">IMPORT SUCCESS</h1>
+    <h1 class="bold">WRONG INPUT FILE</h1>
   </main>
 </body>
 </html>
