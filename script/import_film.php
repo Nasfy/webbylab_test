@@ -1,6 +1,7 @@
 <?php require '../database/db_connect.php';
-$uploaddir = '/file';
-$uploadfile = $uploaddir.basename($_FILES['data']['name']);
+@mkdir("file", 0777);
+$uploadfile = "file/".basename($_FILES['data']['name']);
+var_dump($uploadfile);
 if (@!copy($_FILES['data']['tmp_name'], $uploadfile)):?>
   <script type="text/javascript">window.location = "../view/import.php" </script>
 <?php endif ?>
